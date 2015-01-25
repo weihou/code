@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta charset="utf-8">
+	<title>s</title>
+    <script type="text/javascript" src="question1.js"></script>
+    <script type="text/javascript">
+	    function showAnswer(){
+	    	var arr = document.getElementById("array").value.replace(/[\s"'\[\]]+/g, '').split(",");
+	    	console.dir(arr);
+	    	document.getElementById("result").innerHTML = ReversePolishNotation(arr);
+	    }
+    
+    </script>
+
+</head>
+<body>
+	<div><label for="array">Enter the array (use comma seperator and without []), for example, 2, 1, +, 3, *</label></div>
+	<div><input type="text" id="array" size="50" required></div>
+	<p><button id="submit" onclick="showAnswer()">Submit</button></p>
+	<p>Result: <span id="result"></span></p>
+</body>
+</html>
