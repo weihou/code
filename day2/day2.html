@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta charset="utf-8">
+	<title>s</title>
+    <script type="text/javascript" src="day2.js"></script>
+    <script type="text/javascript">
+	    function showAnswer(){
+	    	var arr = document.getElementById("array").value.replace(/[\s"'\[\]]+/g, '').split(",");
+	    	document.getElementById("result").innerHTML = largestNumber(arr);
+	    }
+    
+    </script>
+
+</head>
+<body>
+	<div class="problem">
+	  	<p>Given a list of non negative integers, arrange them such that they form the largest number.</p>
+ 		<p>For example, given [3, 30, 34, 5, 9], the largest formed number is 9534330.</p>
+		<p>Note: The result may be very large, so you need to return a string instead of an integer.</p>
+	</div>
+	<p>Test</p>
+	<div><label for="array">Enter the array (use comma seperator), for example, 3, 30, 34, 5, 9</label></div>
+	<div><input type="text" id="array" size="50" required></div>
+	<p><button id="submit" onclick="showAnswer()">Submit</button></p>
+	<p>Result: <span id="result"></span></p>
+</body>
+</html>
