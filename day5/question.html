@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta charset="utf-8">
+	<title>s</title>
+    <script type="text/javascript" src="day5.js"></script>
+    <script type="text/javascript">
+	    function showAnswer(){
+	    	document.getElementById("result").innerHTML = fractionToDecimal(parseInt(document.getElementById("numerator").value),parseInt(document.getElementById("denominator").value));
+	    }
+    
+    </script>
+
+</head>
+<body>
+	<div class="problem">
+	  	<pre>Given two integers representing the numerator and denominator of a fraction, return the fraction in string format.
+
+If the fractional part is repeating, enclose the repeating part in parentheses.
+
+For example,
+
+    Given numerator = 1, denominator = 2, return "0.5".
+    Given numerator = 2, denominator = 1, return "2".
+    Given numerator = 2, denominator = 3, return "0.(6)".
+</pre>
+	</div>
+	<p>Test</p>
+	<div><input type="text" id="numerator" size="20" required placeholder="numerator"> / <input type="text" id="denominator" size="20" required placeholder="denominator "></div>
+	<p><button id="submit" onclick="showAnswer()">Submit</button></p>
+	<p>Result: <span id="result" style="word-wrap: break-word;"></span></p>
+</body>
+</html>
